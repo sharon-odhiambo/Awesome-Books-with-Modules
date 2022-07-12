@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome BookList</title>
+</head>
+<body>
+    <div class="head">
+        <div><p>Awesome books</p></div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item1"><a href="#table-section">List</a></li>
+                <li><hr></li>
+                <li class="nav-item2"><a href="#addbook">Add new</a></li>
+                <li><hr></li>
+                <li class="nav-item3"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="date-time" class="date"></div>
+    <div id="table-section" class="table-section1">
+    <h1>All Awesome Books</h1>
+    <table class="book-list"></table>
+    </div>
+    <div id="addbook" class="addbook-section">
+        <form id="form" class="form1">
+            <h1>Add a new book</h1>
+            <div>
+                <input type="text" id="title" class="title1" placeholder="title" required>
+             </div>
+            <div>
+                <input type="text" id="author" class="author1" placeholder="author" required>
+            </div>
+            <button type="submit" class="add">Add</button>
+        </form>
+    </div>
+    <div id="contact" class="contact-section">
+        <h1>Contact Information</h1>
+        <div class="contact-info">
+        <p>Do you have any questions or just want to say "Hello"?<br>You can reach out to us!</p>
+        <ul>    
+            <li>Our email: ericandsharon@gmail.com</li>
+            <li>Our phone number: 012345678 </li>
+            <li>Our address: Kilimani, 80, 0100 Nairobi, Kenya </li>
+        </ul>
+        </div>
+    </div>
+    <footer>Copyright ...</footer>
+<script type="module" src="./index.js"></script>
+</body>
+</html>
