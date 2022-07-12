@@ -1,0 +1,118 @@
+body {
+  padding: 4px 10%;
+  min-height: 97vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  height: 40px;
+  padding: 1px 12px;
+  align-items: center;
+  border: 3px solid black;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  list-style-type: none;
+}
+
+hr {
+  width: 12px;
+  transform: rotate(90deg);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+.date {
+  display: flex;
+  justify-content: end;
+}
+
+.addbook-section,
+.contact-section {
+  display: none;
+}
+
+.book-list {
+  border: 3px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background: #fff;
+}
+
+tr:nth-child(odd) {
+  background: #ccc;
+}
+
+.cols2 {
+  width: 15%;
+  padding: 3px 8px;
+  align-content: center;
+}
+
+.delete {
+  border: 2.5px solid black;
+  box-shadow: 2px 2px;
+  width: 100%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: auto 0;
+}
+
+input {
+  border: 3px solid black;
+  width: 30vw;
+  height: 30px;
+  margin: 2px 12px;
+  padding: 1px 4px;
+}
+
+.add {
+  border: 3px solid black;
+  box-shadow: 2px 2px;
+  margin: auto 0;
+  margin-left: 26vw;
+  height: 30px;
+  width: 64px;
+}
+
+footer {
+  display: flex;
+  width: 98%;
+  margin-top: auto;
+  height: 40px;
+  padding: 3px 12px;
+  align-items: center;
+  border: 2px solid black;
+}
