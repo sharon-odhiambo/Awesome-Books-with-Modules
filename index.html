@@ -23,6 +23,16 @@
     <div id="date-time" class="date"></div>
     <div id="table-section" class="table-section1">
     <h1>All Awesome Books</h1>
+    <table id="display-table">
+    <thead>
+    <tr class="tr-head">
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN</th>
+        <th>Remove</th>
+    </tr>
+    </thead>
+    </table>
     <table class="book-list"></table>
     </div>
     <div id="addbook" class="addbook-section">
@@ -33,6 +43,9 @@
              </div>
             <div>
                 <input type="text" id="author" class="author1" placeholder="author" required>
+            </div>
+            <div>
+                <input type="text" id="isbn" class="isbn1" placeholder="isbn" required>
             </div>
             <button type="submit" class="add">Add</button>
         </form>

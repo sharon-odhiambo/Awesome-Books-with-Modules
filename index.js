@@ -10,13 +10,15 @@ document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault();
   const title = document.querySelector('#title').value;
   const author = document.querySelector('#author').value;
-  const book = new Book(title, author);
+  const isbn = document.querySelector('#isbn').value;
+  const book = new Book(title, author, isbn);
   UI.addBookToList(book);
   Store.addBook(book);
   UI.clearFields();
 });
 document.querySelector('.book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
+  Store.removeBook(e.target.parentElement.previousElementSibling.innerHTML);
 });
 // Single Page Application
 listLink.addEventListener('click', () => {

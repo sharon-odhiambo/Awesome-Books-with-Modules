@@ -1,8 +1,9 @@
 /* eslint-disable max-classes-per-file */
 export class Book {
-  constructor(title, author) {
+  constructor(title, author, isbn) {
     this.title = title;
     this.author = author;
+    this.isbn = isbn;
   }
 }
 
@@ -21,6 +22,16 @@ export class Store {
   static addBook(book) {
     const books = Store.getBooks();
     books.push(book);
+    localStorage.setItem('books', JSON.stringify(books));
+  }
+
+  static removeBook(isbn) {
+    const books = Store.getBooks();
+    books.forEach((book, index) => {
+      if (book.isbn === isbn) {
+        books.splice(index, 1);
+      }
+    });
     localStorage.setItem('books', JSON.stringify(books));
   }
 }

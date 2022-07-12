@@ -55,18 +55,30 @@ table {
   width: 100%;
 }
 
-tr:nth-child(even) {
-  background: #fff;
+tr {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-tr:nth-child(odd) {
+td {
+  width: 25%;
+}
+
+th {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
+  width: 25%;
   background: #ccc;
 }
 
-.cols2 {
-  width: 15%;
-  padding: 3px 8px;
-  align-content: center;
+tr:nth-child(odd) {
+  background: #fff;
+}
+
+tr:nth-child(even) {
+  background: #ccc;
 }
 
 .delete {

@@ -11,8 +11,12 @@ export default class UI {
     const list = document.querySelector('.book-list');
     const addedbook = document.createElement('tr');
     addedbook.innerHTML = `
-        <td class="cols1">"${book.title}" by ${book.author}</td>
-        <td class="cols2"><button type="submit" class="delete">Remove</button></td>
+        <table class="cols">
+        <td class="cols1">"${book.title}"</td>
+        <td class="cols2">by ${book.author}</td>
+        <td class="cols3">${book.isbn}</td>
+        <td class="cols4"><button type="submit" class="delete">Remove</button></td>
+        </table>
         `;
     list.appendChild(addedbook);
   }
@@ -26,6 +30,7 @@ export default class UI {
   static clearFields() {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
+    document.querySelector('#isbn').value = '';
   }
 }
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
