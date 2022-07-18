@@ -18,6 +18,8 @@ To get a local copy for practice or as a template, follow these simple steps.
 
 Access the live source on -https://github.com/sharon-odhiambo/Awesome-Books-with-Modules
 
+Access the live demo on - https://sharon-odhiambo.github.io/sharon-odhiambo.github.io-Awesome-Books-with-Modules/
+
 Copy the **https** or **SSH** address on the code
 Clone the repository using your editor   
 
