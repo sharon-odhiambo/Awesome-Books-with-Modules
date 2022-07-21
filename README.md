@@ -6,7 +6,7 @@
 ## Built With
 
 - Major languages 
-  HTML | Javascript
+  HTML | JavaScript
 - Frameworks
   None
   
